@@ -1,0 +1,73 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+:root{
+  --clr: rgb(249, 73, 14);
+  --color: rgb(255, 98, 0);
+}
+.app {
+  width: 500px;
+  padding: 20px;
+  background-color: #1e2434;
+  border-radius: 10px;
+}
+.head{
+  font-weight: 500;
+  padding: 5px;
+  font-size: 29px;
+}
+.inp-box{
+  width: 100%;
+  margin: 15px 0;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  overflow: hidden;
+}
+.inp{
+  height: 100%;
+  width: 80%;
+  padding: 5px 5px;
+  font-size: 19px;
+  letter-spacing: 0.1px;
+  color: var(--clr);
+  font-weight: 400;
+  border: 0;
+  outline: 0;
+}
+.copy-btn{
+  height: 100%;
+  width: 20%;
+  border: 0;
+  background-color: var(--clr);
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.details{
+  height: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--clr);
+}
+.range-inp{
+  accent-color: var(--clr);
+}
+.number-check{
+  accent-color: var(--color);
+}
+.symbol-check{
+  accent-color: var(--color);
+}
+
+ 
