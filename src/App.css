@@ -58,7 +58,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  color: var(--clr);
+  color: #FFF;
 }
 .range-inp{
   accent-color: var(--clr);

@@ -39,8 +39,13 @@ const App = () => {
 				  className="inp"
 				  readOnly
 			  	 ref={passwordRef}
+           style={{color:AllowNumber && AllowSymbol ? 'green': AllowNumber || AllowSymbol ?'#F9490E': 'red' }}
 			  />
-        <button onClick={copyText} className="copy-btn">copy</button>
+        <button
+          onClick={copyText}
+          className="copy-btn"
+          style={{backgroundColor:AllowNumber && AllowSymbol ? 'green': AllowNumber || AllowSymbol ?'#F9490E': 'red' }}
+        >copy</button>
       </div>
       <div className="details">
         <input
@@ -50,6 +55,8 @@ const App = () => {
           value={length}
           className="range-inp"
           onChange={(e) => setLength(e.target.value)}
+          style={{accentColor:AllowNumber && AllowSymbol ? 'green': AllowNumber || AllowSymbol ?'#F9490E': 'red' }}
+          
         />
         <label htmlFor="">length:{length}</label>
         <input
@@ -57,6 +64,7 @@ const App = () => {
           className="number-check"
           defaultChecked={AllowNumber}
           onChange={() => setAllowNumber((prev) => !prev)}
+          style={{accentColor:AllowNumber && AllowSymbol ? 'green': AllowNumber || AllowSymbol ?'#F9490E': 'red' }}
         />
         <label htmlFor="">AllowNumber's</label>
         <input
@@ -64,6 +72,7 @@ const App = () => {
           className="symbol-check"
           defaultChecked={AllowSymbol}
           onChange={() => setAllowSymbol((prev) => !prev)}
+          style={{accentColor:AllowNumber && AllowSymbol ? 'green': AllowNumber || AllowSymbol ?'#F9490E': 'red' }}
         />
         <label htmlFor="">Allowsymbol's</label>
       </div>
